@@ -15,6 +15,12 @@ install:
 	@pip install -r requirements.txt
 
 
+.PHONY: freeze
+freeze:
+	@echo "Freezing dependencies..."
+	@pip freeze > requirements.txt
+
+
 .PHONY: run
 run:
 	@echo "Running application..."
