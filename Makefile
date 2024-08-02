@@ -24,4 +24,10 @@ freeze:
 .PHONY: run
 run:
 	@echo "Running application..."
-	python app.py
+	python main.py
+
+
+.PHONY: test
+test:
+	@echo "Running tests..."
+	pytest -v tests
